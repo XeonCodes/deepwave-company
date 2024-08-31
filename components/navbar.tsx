@@ -1,14 +1,24 @@
+"use client";
 import { siteConfig } from "@/config/site";
 import { getSession } from "@/util/actions";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default async function Navbar() {
-  const session = await getSession();
+export default function Navbar() {
+  const [session, setSesstion] = useState<any>([]);
+
+  async function GetSession() {
+    const session = await getSession();
+    setSesstion(session);
+  }
+
+  useEffect(() => {
+    GetSession();
+  }, []);
 
   return (
     <div className="p-4">
-      {session.isLoggedIn && (
+      {session?.isLoggedIn && (
         <div>
           <Link
             className="text-lg"
@@ -18,8 +28,8 @@ export default async function Navbar() {
           </Link>
         </div>
       )}
-      {!session.isLoggedIn && (
-        <>
+      {!session?.isLoggedIn && (
+        <div>
           <div>
             <Link className="text-lg" href={`${siteConfig.pathLinks.signin}`}>
               Sign In
@@ -30,7 +40,7 @@ export default async function Navbar() {
               Register
             </Link>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
