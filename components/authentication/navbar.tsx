@@ -3,6 +3,7 @@ import { MdClose } from "react-icons/md";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { navbarPadding } from "../primitives";
+import Image from "next/image";
 
 function Navbar() {
   return (
@@ -13,8 +14,14 @@ function Navbar() {
         href={`${siteConfig.pathLinks.landingPage}`}
         className="flex items-center gap-1"
       >
-        <img className="w-12" src="/assets/logo1.png" alt="" />
-        {/* <SiConfluence size={26} className="text-primary rotate-[100deg]" /> */}
+        <Image
+          width={48}
+          height={48}
+          quality={40}
+          className="w-12"
+          src="/assets/logo1.png"
+          alt="logo"
+        />
         <h1
           className={`text-[32px] hidden sm:flex text-black font-black italic`}
         >
