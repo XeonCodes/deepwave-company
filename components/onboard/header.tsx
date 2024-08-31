@@ -4,14 +4,12 @@ import React from "react";
 
 export default function HeaderText({
   title,
-  action,
   subtitle,
   actionText,
   path,
 }: {
   title: string;
   subtitle: string;
-  action: () => void;
   actionText: string;
   path: string;
 }) {

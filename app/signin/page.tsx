@@ -11,8 +11,6 @@ import { toast } from "react-toastify";
 export default function SigninPage() {
   const [state, formAction] = useFormState<any, FormData>(login, undefined);
 
-  const nav = () => {};
-
   useEffect(() => {
     state?.error && state.error != "" && toast(state.error, { toastId: "sck" });
   }, [state]);
@@ -24,7 +22,6 @@ export default function SigninPage() {
         <HeaderText
           title="Welcome back"
           subtitle={`New to ${siteConfig.name}?`}
-          action={nav}
           actionText="Sign up"
           path="register"
         />
@@ -38,8 +35,9 @@ export default function SigninPage() {
             <input
               type="email"
               required
-              className="input1 bg-white"
+              className="input1 bg-white text-black"
               name="email"
+              placeholder="eg, example@xyz.com"
               id="email"
             />
           </div>
@@ -52,7 +50,8 @@ export default function SigninPage() {
             <input
               type="password"
               required
-              className="input1 bg-white"
+              placeholder="•••••••"
+              className="input1 bg-white text-black"
               name="password"
               id="password"
             />
@@ -60,7 +59,7 @@ export default function SigninPage() {
 
           <div className="flex flex-col gap-3">
             <button className="main-btn mt-1">Log in</button>
-            <Link href={`${siteConfig.pathLinks.dashboardHome}`}>
+            <Link href={`${siteConfig.pathLinks.trainingDashboard}`}>
               <p className="text-black font-semibold underline underline-offset-4">
                 Forgot password?
               </p>

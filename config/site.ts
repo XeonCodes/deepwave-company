@@ -6,17 +6,15 @@ export const siteConfig = {
 
   pathLinks: {
     landingPage: "/",
-    dashboardHome: "/dashboard",
     signin: "/signin",
     register: "/register",
-    training: "/training",
-    trainingDashboard: "/training/dashboard",
-    trainingMessage: "/training/dashboard/messages",
-    trainingCourses: "/training/dashboard/courses",
-    trainingTools: "/training/dashboard/tools",
-    trainingPurchase: "/training/dashboard/purchase",
-    trainingNotificaiton: "/training/dashboard/notification",
-    trainingProfile: "/training/dashboard/profile",
+    trainingDashboard: "/dashboard",
+    trainingMessage: "/dashboard/messages",
+    trainingCourses: "/dashboard/courses",
+    trainingTools: "/dashboard/tools",
+    trainingPurchase: "/dashboard/purchase",
+    trainingNotificaiton: "/dashboard/notification",
+    trainingProfile: "/dashboard/profile",
   },
 
   appColors: {

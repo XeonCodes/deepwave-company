@@ -8,7 +8,7 @@ export default function Navbar() {
       <div>
         <Link
           className="text-lg"
-          href={`${siteConfig.pathLinks.dashboardHome}`}
+          href={`${siteConfig.pathLinks.trainingDashboard}`}
         >
           Dashboard
         </Link>
@@ -21,11 +21,6 @@ export default function Navbar() {
       <div>
         <Link className="text-lg" href={`${siteConfig.pathLinks.register}`}>
           Register
-        </Link>
-      </div>
-      <div>
-        <Link className="text-lg" href={`${siteConfig.pathLinks.training}`}>
-          Training
         </Link>
       </div>
     </div>

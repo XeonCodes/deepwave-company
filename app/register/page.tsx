@@ -8,7 +8,6 @@ export default function RegisterPage() {
     <OnboardLayout>
       <section className="flex flex-col gap-10">
         <HeaderText
-          action={() => console.log("ksncks")}
           title={`Create your ${siteConfig.name} account`}
           subtitle="Already have an account?"
           actionText="Log in"
@@ -21,14 +20,15 @@ export default function RegisterPage() {
               <p className="label1">Your email</p>
             </label>
             <input
+              placeholder="eg, example@xyz.com"
               type="email"
-              className="input1 bg-white"
+              className="input1 bg-white text-black"
               id="email"
-              // required
+              required
             />
           </div>
 
-          <div className="flex flex-col gap-1">
+          {/* <div className="flex flex-col gap-1">
             <label htmlFor="phone_number">
               <p className="label1">Your phone number</p>
             </label>
@@ -38,23 +38,24 @@ export default function RegisterPage() {
               id="phone_number"
               // required
             />
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-1">
             <label htmlFor="password">
               <p className="label1">Your password</p>
             </label>
             <input
+              placeholder="•••••••"
               type="password"
-              className="input1 bg-white"
+              className="input1 bg-white text-black"
               id="password"
-              // required
+              required
             />
           </div>
 
           <div className="flex flex-col gap-3 mt-2">
             <button className="main-btn">Next</button>
-            <Link href={`${siteConfig.pathLinks.dashboardHome}`}>
+            <Link href={`${siteConfig.pathLinks.trainingDashboard}`}>
               <p className="text-black font-semibold underline underline-offset-4">
                 Having trouble?
               </p>

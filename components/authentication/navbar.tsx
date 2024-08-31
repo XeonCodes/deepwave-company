@@ -22,9 +22,7 @@ function Navbar() {
           src="/assets/logo1.png"
           alt="logo"
         />
-        <h1
-          className={`text-[32px] hidden sm:flex text-black font-black italic`}
-        >
+        <h1 className={`text-[32px] flex text-black font-black italic`}>
           {siteConfig.name.toUpperCase()}
         </h1>
       </Link>

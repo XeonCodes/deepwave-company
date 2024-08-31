@@ -46,7 +46,7 @@ export const login = async (
   session.isLoggedIn = true;
 
   await session.save();
-  redirect(`${siteConfig.pathLinks.landingPage}`);
+  redirect(`${siteConfig.pathLinks.trainingDashboard}`);
 };
 
 export const logout = async () => {

@@ -1,14 +1,15 @@
 import { title } from "@/components/primitives";
 import DashboardLayout from "@/layouts/dashboard";
+import TrainingDashboardLayout from "@/layouts/training";
 
 export default function IndexPage() {
   return (
-    <DashboardLayout>
+    <TrainingDashboardLayout>
       <section className="text-center">
         <div>
-          <h1 className={title()}>Transaction Page</h1>
+          <h1 className={title()}>Student Profile Page</h1>
         </div>
       </section>
-    </DashboardLayout>
+    </TrainingDashboardLayout>
   );
 }
