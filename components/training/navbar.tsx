@@ -149,7 +149,7 @@ export const Navbar = () => {
           >
             <div className="relative">
               <IoMdNotifications size={22} />
-              <span className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></span>
+              <div className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></div>
             </div>
           </Link>
         </li>

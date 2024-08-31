@@ -9,7 +9,7 @@ export default function TrainingDashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex flex-col ">
+    <div className="">
       <Head />
       <div className=" sticky top-0">
         <Navbar />
