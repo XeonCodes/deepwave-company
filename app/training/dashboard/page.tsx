@@ -15,6 +15,89 @@ export default async function IndexPage() {
       <section className="text-center">
         <div>
           <h1 className={title()}>Dashboard Home</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eum, magnam omnis explicabo rerum est
+            illo fuga, sapiente ad laboriosam voluptates, possimus dolorem
+            repudiandae asperiores harum fugit. Laboriosam expedita fuga quia!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            magnam omnis explicabo rerum est illo fuga, sapiente ad laboriosam
+            voluptates, possimus dolorem repudiandae asperiores harum fugit.
+            Laboriosam expedita fuga quia!
+          </p>
         </div>
       </section>
     </TrainingDashboardLayout>

@@ -147,7 +147,7 @@ export const Navbar = () => {
             }`}
             href={siteConfig.pathLinks.trainingNotificaiton}
           >
-            <div className=" relative">
+            <div className="relative">
               <IoMdNotifications size={22} />
               <span className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></span>
             </div>

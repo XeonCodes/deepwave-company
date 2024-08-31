@@ -11,7 +11,9 @@ export default function TrainingDashboardLayout({
   return (
     <div className="relative flex flex-col h-screen">
       <Head />
-      <Navbar />
+      <div className=" sticky top-0">
+        <Navbar />
+      </div>
       <main className="mt-3">{children}</main>
     </div>
   );
