@@ -7,6 +7,8 @@ import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import { Providers } from "./providers";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import TopLoadingBar from "@/components/top-loading-bar";
 
 export const metadata: Metadata = {
   title: {

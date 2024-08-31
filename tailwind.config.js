@@ -1,4 +1,5 @@
 import { nextui } from "@nextui-org/theme";
+import { siteConfig } from "./config/site";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -23,14 +24,16 @@ module.exports = {
         light: {
           colors: {
             radGrey: "#868685",
-            primary: "#153300",
+            primary: siteConfig.appColors.primaryColor,
             background: "#F2F3F4",
+            card: "white",
           },
         },
         dark: {
           colors: {
             radGrey: "#868685",
-            primary: "#153300",
+            primary: siteConfig.appColors.primaryColor,
+            card: "#28282B",
           },
         },
       },

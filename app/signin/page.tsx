@@ -2,12 +2,11 @@
 import HeaderText from "@/components/onboard/header";
 import { siteConfig } from "@/config/site";
 import OnboardLayout from "@/layouts/onboard";
-import { login, testRedirect } from "@/util/actions";
+import { login } from "@/util/actions";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useFormState } from "react-dom";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 export default function SigninPage() {
   const [state, formAction] = useFormState<any, FormData>(login, undefined);

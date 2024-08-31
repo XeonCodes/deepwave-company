@@ -46,7 +46,7 @@ export const login = async (
   session.isLoggedIn = true;
 
   await session.save();
-  redirect(`${siteConfig.pathLinks.dashboardHome}`);
+  redirect(`${siteConfig.pathLinks.landingPage}`);
 };
 
 export const logout = async () => {
@@ -64,12 +64,4 @@ export const ChangePremium = async () => {
 
   // Reload session data
   revalidatePath("/profile");
-};
-
-export const testRedirect = async () => {
-  const session = await getSession();
-  session.isLoggedIn = true;
-  await session.save();
-
-  redirect(`${siteConfig.pathLinks.dashboardHome}`);
 };

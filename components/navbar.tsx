@@ -23,6 +23,11 @@ export default function Navbar() {
           Register
         </Link>
       </div>
+      <div>
+        <Link className="text-lg" href={`${siteConfig.pathLinks.training}`}>
+          Training
+        </Link>
+      </div>
     </div>
   );
 }
