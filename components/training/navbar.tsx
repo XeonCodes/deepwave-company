@@ -35,7 +35,7 @@ export const Navbar = () => {
       <ul className="flex h-full items-center gap-4">
         <li className="flex items-center gap-4">
           <FiMenu size={24} className="flex md:hidden cursor-pointer" />
-          <Link href={siteConfig.pathLinks.landingPage}>
+          <Link href={siteConfig.pathLinks.trainingDashboard}>
             {/* <Image
               alt="logo"
               width={35}
