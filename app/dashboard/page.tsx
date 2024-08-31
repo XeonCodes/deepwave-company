@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import TrainingDashboardLayout from "@/layouts/training";
-import { getSession } from "@/util/actions";
+import { getSession, logout } from "@/util/actions";
 import { redirect } from "next/navigation";
 
 export default async function IndexPage() {
@@ -13,7 +13,7 @@ export default async function IndexPage() {
   return (
     <TrainingDashboardLayout>
       <section className="text-center">
-        <div>
+        <div className="flex flex-col gap-8">
           <h1 className={title()}>Dashboard Home</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
@@ -23,6 +23,9 @@ export default async function IndexPage() {
             voluptates, possimus dolorem repudiandae asperiores harum fugit.
             Laboriosam expedita fuga quia!
           </p>
+          <form action={logout}>
+            <button className="main-btn">Destroy Session</button>
+          </form>
         </div>
       </section>
     </TrainingDashboardLayout>

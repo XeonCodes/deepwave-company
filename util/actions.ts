@@ -52,7 +52,7 @@ export const login = async (
 export const logout = async () => {
   const session = await getSession();
   session.destroy();
-  redirect("/login");
+  redirect(`${siteConfig.pathLinks.landingPage}`);
 };
 
 export const ChangePremium = async () => {

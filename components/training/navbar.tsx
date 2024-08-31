@@ -7,6 +7,11 @@ import { IoMdNotifications, IoMdNotificationsOutline } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
 import { Badge } from "@nextui-org/badge";
+import {
+  BiSolidMessageSquare,
+  BiSolidMessageSquareCheck,
+  BiSolidMessageSquareEdit,
+} from "react-icons/bi";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -29,28 +34,33 @@ export const Navbar = () => {
         <li className="flex items-center gap-4">
           <FiMenu size={24} className="flex md:hidden cursor-pointer" />
           <Link href={siteConfig.pathLinks.landingPage}>
-            <Image
+            {/* <Image
               alt="logo"
               width={35}
               height={35}
               quality={40}
               src="/assets/logod.png"
+            /> */}
+            <BiSolidMessageSquareCheck
+              color={siteConfig.appColors.primaryColor}
+              size={37}
             />
           </Link>
+
           <p className="flex md:hidden font-semibold">
-            {pathname == "/training/dashboard"
+            {pathname == "/dashboard"
               ? "My space"
-              : pathname == "/training/dashboard/messages"
+              : pathname == "/dashboard/messages"
                 ? "Messages"
-                : pathname == "/training/dashboard/courses"
+                : pathname == "/dashboard/courses"
                   ? "My courses"
-                  : pathname == "/training/dashboard/tools"
+                  : pathname == "/dashboard/tools"
                     ? "Tools"
-                    : pathname == "/training/dashboard/purchase"
+                    : pathname == "/dashboard/purchase"
                       ? "Purchase"
-                      : pathname == "/training/dashboard/notification"
+                      : pathname == "/dashboard/notification"
                         ? "Notification"
-                        : pathname == "/training/dashboard/profile"
+                        : pathname == "/dashboard/profile"
                           ? "Profile"
                           : null}
           </p>
