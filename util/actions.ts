@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { getIronSession } from "iron-session";
 import { toast } from "react-toastify";
+import { siteConfig } from "@/config/site";
 
 let email = "admin@gmail.com";
 let isPro = true;
@@ -36,7 +37,7 @@ export const login = async (
   // CHECK THE USER STATUS
   session.isBlocked = isBlocked;
 
-  if (formEmail != email && formPassword != password) {
+  if (formEmail != email) {
     return { error: "Wrong credentials" };
   }
 
@@ -45,7 +46,7 @@ export const login = async (
   session.isLoggedIn = true;
 
   await session.save();
-  redirect("/");
+  redirect(`${siteConfig.pathLinks.dashboardHome}`);
 };
 
 export const logout = async () => {
@@ -70,5 +71,5 @@ export const testRedirect = async () => {
   session.isLoggedIn = true;
   await session.save();
 
-  redirect("/dashboard");
+  redirect(`${siteConfig.pathLinks.dashboardHome}`);
 };

@@ -24,6 +24,7 @@ module.exports = {
           colors: {
             radGrey: "#868685",
             primary: "#153300",
+            background: "#F2F3F4",
           },
         },
         dark: {

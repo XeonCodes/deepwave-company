@@ -42,7 +42,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <main className="">{children}</main>
-          <ToastContainer />
+          <ToastContainer autoClose={2000} />
         </Providers>
       </body>
     </html>
