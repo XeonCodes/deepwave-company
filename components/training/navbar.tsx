@@ -6,6 +6,7 @@ import Link from "next/link";
 import { IoMdNotifications, IoMdNotificationsOutline } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
+import { Badge } from "@nextui-org/badge";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -147,9 +148,11 @@ export const Navbar = () => {
             }`}
             href={siteConfig.pathLinks.trainingNotificaiton}
           >
-            <div className="relative">
-              <IoMdNotifications size={22} />
-              <div className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></div>
+            <div className="">
+              <Badge content="" color="danger">
+                <IoMdNotifications size={22} />
+              </Badge>
+              {/* <div className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></div> */}
             </div>
           </Link>
         </li>
