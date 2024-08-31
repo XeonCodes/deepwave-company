@@ -148,10 +148,10 @@ export const Navbar = () => {
             }`}
             href={siteConfig.pathLinks.trainingNotificaiton}
           >
-            <div className="">
-              <Badge content="" color="danger">
-                <IoMdNotifications size={22} />
-              </Badge>
+            <div className="relative">
+              {/* <Badge content="" color="danger"> */}
+              <IoMdNotifications size={22} />
+              {/* </Badge> */}
               {/* <div className="h-3 border-2 border-white w-3 top-[-3] right-[-2] absolute rounded-full bg-danger"></div> */}
             </div>
           </Link>
