@@ -11,7 +11,7 @@ export default function TrainingDashboardLayout({
   return (
     <div className="">
       <Head />
-      <div className=" sticky top-0">
+      <div className=" sticky top-0 bg-card flex flex-col items-center">
         <Navbar />
       </div>
       <div className="flex flex-col items-center">

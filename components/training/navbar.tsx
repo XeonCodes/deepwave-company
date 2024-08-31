@@ -27,7 +27,9 @@ export const Navbar = () => {
         flex
         justify-between
         items-center
-        bg-card border-t-2
+        w-full
+        sm:max-w-[1300px]
+        border-t-2
         "
     >
       <ul className="flex h-full items-center gap-4">
