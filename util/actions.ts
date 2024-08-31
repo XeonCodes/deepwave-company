@@ -5,10 +5,12 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { getIronSession } from "iron-session";
+import { toast } from "react-toastify";
 
-let username = "john";
+let email = "admin@gmail.com";
 let isPro = true;
 let isBlocked = true;
+let password = "123456";
 
 export const getSession = async () => {
   const session = await getIronSession<SessionData>(cookies(), sessionOptions);
@@ -26,7 +28,7 @@ export const login = async (
 ) => {
   const session = await getSession();
 
-  const formUsername = formData.get("username") as string;
+  const formEmail = formData.get("email") as string;
   const formPassword = formData.get("password") as string;
 
   // Check User in the database
@@ -34,13 +36,12 @@ export const login = async (
   // CHECK THE USER STATUS
   session.isBlocked = isBlocked;
 
-  if (formUsername !== username) {
-    return { error: "wrong credentials" };
+  if (formEmail != email && formPassword != password) {
+    return { error: "Wrong credentials" };
   }
 
   session.userID = "1";
-  session.username = username;
-  session.isPro = isPro;
+  session.email = email;
   session.isLoggedIn = true;
 
   await session.save();
@@ -64,6 +65,10 @@ export const ChangePremium = async () => {
   revalidatePath("/profile");
 };
 
-export const testRedirect = () => {
-  redirect("/");
+export const testRedirect = async () => {
+  const session = await getSession();
+  session.isLoggedIn = true;
+  await session.save();
+
+  redirect("/dashboard");
 };

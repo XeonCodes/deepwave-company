@@ -1,11 +1,22 @@
+"use client";
 import HeaderText from "@/components/onboard/header";
 import { siteConfig } from "@/config/site";
 import OnboardLayout from "@/layouts/onboard";
-import { testRedirect } from "@/util/actions";
+import { login, testRedirect } from "@/util/actions";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useFormState } from "react-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function SigninPage() {
+  const [state, formAction] = useFormState<any, FormData>(login, undefined);
+
   const nav = () => {};
+
+  useEffect(() => {
+    state?.error && state.error != "" && toast(state.error, { toastId: "sck" });
+  }, [state]);
 
   return (
     <OnboardLayout>
@@ -19,7 +30,7 @@ export default function SigninPage() {
           path="register"
         />
 
-        <form action={testRedirect} className="flex flex-col gap-6">
+        <form action={formAction} className="flex flex-col gap-6">
           {/* Email */}
           <div className="flex flex-col gap-1">
             <label htmlFor="email">
@@ -29,7 +40,7 @@ export default function SigninPage() {
               type="email"
               required
               className="input1 bg-white"
-              name=""
+              name="email"
               id="email"
             />
           </div>

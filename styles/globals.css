@@ -39,6 +39,6 @@ body::-webkit-scrollbar {
   background-color: var(--primaryColor);
   border-radius: 50px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
 }
