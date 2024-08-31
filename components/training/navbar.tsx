@@ -36,7 +36,7 @@ export const Navbar = () => {
               src="/assets/logod.png"
             />
           </Link>
-          <p className="flex md:hidden">
+          <p className="flex md:hidden font-semibold">
             {pathname == "/training/dashboard"
               ? "My space"
               : pathname == "/training/dashboard/messages"
