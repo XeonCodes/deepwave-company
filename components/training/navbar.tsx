@@ -3,15 +3,9 @@ import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
-import { IoMdNotifications, IoMdNotificationsOutline } from "react-icons/io";
-import { RiMenu3Fill } from "react-icons/ri";
+import { IoMdNotifications } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
-import { Badge } from "@nextui-org/badge";
-import {
-  BiSolidMessageSquare,
-  BiSolidMessageSquareCheck,
-  BiSolidMessageSquareEdit,
-} from "react-icons/bi";
+import { BiSolidMessageSquareCheck } from "react-icons/bi";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -28,14 +22,35 @@ export const Navbar = () => {
         justify-between
         items-center
         w-full
-        sm:max-w-[1300px]
+        sm:max-w-[1400px]
         border-t-2
         "
     >
       <ul className="flex h-full items-center gap-4">
         <li className="flex items-center gap-4">
           <FiMenu size={24} className="flex md:hidden cursor-pointer" />
-          <Link href={siteConfig.pathLinks.trainingDashboard}>
+
+          <Link
+            className=" flex md:hidden"
+            href={siteConfig.pathLinks.trainingDashboard}
+          >
+            {/* <Image
+              alt="logo"
+              width={35}
+              height={35}
+              quality={40}
+              src="/assets/logod.png"
+            /> */}
+            <BiSolidMessageSquareCheck
+              color={siteConfig.appColors.primaryColor}
+              size={37}
+            />
+          </Link>
+
+          <Link
+            className=" hidden md:flex"
+            href={siteConfig.pathLinks.landingPage}
+          >
             {/* <Image
               alt="logo"
               width={35}
@@ -180,13 +195,13 @@ export const Navbar = () => {
               alt="logo"
               width={30}
               height={30}
-              className={`rounded-full object-cover ${
+              className={`rounded-full w-[30px] h-[30px] object-cover ${
                 isActive(siteConfig.pathLinks.trainingProfile)
                   ? "border-2 border-[#0982ff]"
                   : ""
               }`}
               quality={40}
-              src="/assets/avater.jpeg"
+              src="/assets/lady.jpg"
             />
           </Link>
         </li>

@@ -15,7 +15,9 @@ export default function TrainingDashboardLayout({
         <Navbar />
       </div>
       <div className="flex flex-col items-center">
-        <main className="mt-3 max-w-[1300px] px-5">{children}</main>
+        <main className="mt-3 w-full md:max-w-[1100px] px-5 xl:px-0">
+          {children}
+        </main>
       </div>
     </div>
   );

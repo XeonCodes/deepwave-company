@@ -1,20 +1,10 @@
-"use client";
+import React from "react";
 import { siteConfig } from "@/config/site";
 import { getSession } from "@/util/actions";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 
-export default function Navbar() {
-  const [session, setSesstion] = useState<any>([]);
-
-  async function GetSession() {
-    const session = await getSession();
-    setSesstion(session);
-  }
-
-  useEffect(() => {
-    GetSession();
-  }, []);
+async function Navbar() {
+  const session = await getSession();
 
   return (
     <div className="p-4">
@@ -45,3 +35,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;
