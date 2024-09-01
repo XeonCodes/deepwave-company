@@ -1,26 +1,13 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { siteConfig } from "@/config/site";
 import { getSession } from "@/util/actions";
 import Link from "next/link";
 
-interface SessionTypes {
-  isLoggedIn: boolean;
-}
-
-function Navbar() {
-  const [session, setSession] = useState<SessionTypes>();
-
-  useEffect(() => {
-    const session = async () => {
-      const session = await getSession();
-      setSession(session);
-    };
-    session();
-  }, []);
+export async function Nav() {
+  const session = await getSession();
 
   return (
-    <div className="p-4">
+    <div>
       {session?.isLoggedIn && (
         <div>
           <Link
@@ -31,6 +18,7 @@ function Navbar() {
           </Link>
         </div>
       )}
+
       {!session?.isLoggedIn && (
         <div>
           <div>
@@ -48,5 +36,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
